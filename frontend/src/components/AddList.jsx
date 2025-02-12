@@ -4,11 +4,11 @@ const AddList = ({ onAdd }) => {
     const [newTask, setNewTask] = useState("");
 
     const handleChange = (e) => {
-        setNewTask(e.target.value);
+        setNewTask(e.target.value); //when the user types in the input field, the state is updated
     };
 
     const handleAdd = () => {
-        onAdd(newTask);
+        onAdd(newTask); //onAdd is a prop passed from the parent component
         setNewTask("");
     };
 
